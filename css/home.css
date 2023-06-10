@@ -1,0 +1,34 @@
+.hom_ban{
+    background: url(../assets/tokyo.jpg) bottom center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+.hom_ban::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.com-pt{
+    padding-top: 15px;
+}
+@media screen and (max-width:767px) {
+    img{
+        max-width: 100%;
+    }
+    p{
+        font-size: 20px;
+    }
+    a{
+        margin: 10px 0;
+    }
+    .com-pt{
+        padding-top: 0px;
+    }
+}
